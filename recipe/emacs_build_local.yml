@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+  become: true
+  vars:
+    - emacs_build_ver: '26.1'
+  roles:
+    - andrewrothstein.emacs-build
